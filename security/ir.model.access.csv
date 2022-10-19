@@ -1,3 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_deplog_sale_ext_deplog_sale_ext,deplog_sale_ext.deplog_sale_ext,model_my_module_deplog_sale_ext,1,0,0,0
+access_deplog_sale_ext_deplog_sale_ext,deplog_sale_ext.deplog_sale_ext,model_deplog_sale_ext_deplog_sale_ext,1,0,0,0
 

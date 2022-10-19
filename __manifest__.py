@@ -10,5 +10,5 @@
     'data': [
         'views/'
     ],
-    'installable': true
+    'installable': 'true'
 }
