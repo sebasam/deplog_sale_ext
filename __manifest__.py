@@ -8,7 +8,7 @@
 
     'depends': ['sale_management'],
     'data': [
-        'views/'
+        'views/order.xml'
     ],
     'installable': True
 }
