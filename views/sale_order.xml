@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_order_tree" model="ir.ui.view">
+            <field name="name">sale.order.tree</field>
+            <field name="model">sale.order</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sale_type" />
+                    <field name="is_international" />
+                    <field name="operator_type" />
+                    <field name="product_id" />
+                    <field name="reference_type" />
+                    <field name="is_danger" />
+                    <field name="value" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_order_form" model="ir.ui.view">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form string="Order">
+                    <sheet>
+                        <notebook colspan="4">
+                            <page name="sale_order" string="Orden de venta">
+                                <group 
+                                    col="4" 
+                                    colspan="4"
+                                    name="sales_detail"
+                                >
+                                    <field name="sale_type" />
+                                    <field name="is_international" />
+                                    <field name="operator_type" />
+                                    <field name="product_id" />
+                                    <field name="reference_type" />
+                                    <field name="is_danger" />
+                                    <field name="value" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
