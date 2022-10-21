@@ -1,7 +1,7 @@
 from odoo import models, fields
 
 class SaleOrder(models.Model):
-    _name = 'sale.order'
+    _name = 'sales.order'
 
     sale_type = fields.Selection(selection=[("national", "National"), ("international", "International")])
     is_international = fields.Boolean(string='Internacional?')
